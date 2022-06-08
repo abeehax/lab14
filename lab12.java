@@ -11,7 +11,7 @@ public class lab12 {
 		System.out.print("Enter the index of the array: ");
 		try {
 			// Display the corresponding element value
-			System.out.println("The element value is " + 
+			System.out.println("The v2 element value is " + 
 				array[input.nextInt()]);
 		}
 		catch (ArrayIndexOutOfBoundsException ex) {
@@ -21,9 +21,9 @@ public class lab12 {
 
 	/** Returns an array with 100 randomly chosen integers */
 	public static int[] getArray() {
-		int[] array = new int[200];
+		int[] array = new int[300];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int)(Math.random() * 200) + 1;
+			array[i] = (int)(Math.random() * 300) + 1;
 		}
 		return array;
 	}
