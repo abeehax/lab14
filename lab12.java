@@ -11,19 +11,19 @@ public class lab12 {
 		System.out.print("Enter the index of the array: ");
 		try {
 			// Display the corresponding element value
-			System.out.println("The corresponding element value is " + 
+			System.out.println("The v2 element value is " + 
 				array[input.nextInt()]);
 		}
 		catch (ArrayIndexOutOfBoundsException ex) {
-			System.out.println("Out of Bounds.");
+			System.out.println("Out of Bound.");
 		}
 	}
 
 	/** Returns an array with 100 randomly chosen integers */
 	public static int[] getArray() {
-		int[] array = new int[100];
+		int[] array = new int[300];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int)(Math.random() * 100) + 1;
+			array[i] = (int)(Math.random() * 300) + 1;
 		}
 		return array;
 	}
